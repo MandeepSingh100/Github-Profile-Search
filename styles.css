@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.search-text {
+    font-size: large;
+}
+
+.search-input {
+    display: flex;
+    gap: 5px;
+    width: 50%;
+}
+
+.search-input input {
+    padding: 5px;
+    width: 100%;
+}
+
+.search-input input:focus-visible {
+    outline: 1px solid rgb(138, 135, 135);
+}
+
+.search-input button {
+    padding: 5px 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-input button:hover {
+    background-color: blueviolet;
+}
+
+.profile {
+   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   height: 360px;
+   width: 900px;
+   transition: 0.5s ease-in;
+}
+
+.profile:hover {
+    transition: 0.5s ease-in;
+    transform: rotate(-2deg) scale(1.01);
+}
+
+.top-section {
+    display: flex;
+    gap: 200px;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.grey {
+    color: rgb(173, 171, 171);
+    font-weight: lighter;
+}
+
+.btn button{
+    padding: 5px 5px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    background-color: orange;
+}
+
+.about-section {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.social-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.followers, .followings, .repository {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
